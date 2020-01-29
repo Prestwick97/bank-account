@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bank Account</h1>
+          <form id="registerForm">
+            <div class="form-group">
+            <p>Register a new account:</p>
+              <label for = "name">Name:</label>
+              <input id="name" type="text">
+              <label for = "initDeposit">Initial Deposit</label>
+              <input type="text" id="initDeposit">
+            </div>
+            <button type="submit" class="btn-primary">Register</button>
+          </form>
+
+          <form id="transactionForm">
+            <div class="form-group">
+              <p>Deposit or Withdrawal funds:</p>
+              <label for = "deposit">Deposit:</label>
+              <input id="deposit" type="text">
+              <label for = "withdrawal">Withdrawal:</label>
+              <input type="text" id="withdrawal">
+            </div>
+            <button type="submit" class="btn-primary">Withdrawal/Deposit</button>
+          </form>
+          <div>
+          <h2>Amount in Account:</h2>
+          <h2><div id="result"></div></h2>
+      </div>
+  </body>
+</html>
